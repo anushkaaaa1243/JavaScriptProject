@@ -15,10 +15,11 @@ body{
 }
 
 .container{
-    border: 2px solid white;
+
     width: 40%;
     min-width: 450px;
     padding: 30px 40px;
+    position: absolute;
 
 }
 
@@ -41,6 +42,55 @@ body{
     padding: 12px;
     font-weight: 600;
     position: relative;
+    border-radius: 10px;
+
+}
+#newTask input:focus {
+    border-color: #8052ec;
+}
+
+#newTask button {
+    position: relative;
+    float: right;
+    width: 25%;
+    height: 40px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #8052ec;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#task{
+    background-color: white;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    width: 100%;
+    position: relative;
 
 }
 
+.delete{
+
+    float: right;
+    width: 25%;
+    height: 45px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #8052ec;
+    border: none;
+    color: white;
+    
+    cursor: pointer;
+  
+}
+.completed{
+    text-decoration: line-through;
+}
